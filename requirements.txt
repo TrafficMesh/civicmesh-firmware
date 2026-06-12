@@ -1,0 +1,5 @@
+tensorflow-lite==2.13.0
+gpiozero==2.0.1
+pyserial==3.5
+aiohttp==3.9.1
+pytest==8.2.2
