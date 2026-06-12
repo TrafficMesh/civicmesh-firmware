@@ -1,0 +1,25 @@
+# Raspberry Pi CM4 GPIO Pin Assignments
+
+camera_interface: "MIPI CSI-2"
+
+obd_ii:
+  uart: "UART0"
+  pins: [8, 10]
+  baudrate: 38400
+
+gps:
+  uart: "UART1"
+  pins: [27, 28]
+  baudrate: 115200
+
+power_management:
+  battery_low: 17
+  buck_enable: 27
+
+usb:
+  hub: "4-port USB 2.0"
+  ports:
+    - "Viofo dashcam"
+    - "Quectel EC25 modem"
+    - "Spare"
+    - "Spare"

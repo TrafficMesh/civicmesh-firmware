@@ -1,0 +1,16 @@
+# Network and Cellular Configuration
+
+cellular:
+  modem: "Quectel EC25"
+  apn: "carrier_apn"
+  bands: ["B3", "B7", "B20"]
+  fallback_2g: true
+
+backend:
+  url: "https://api.civicmesh.local"
+  upload_endpoint: "/incidents/submit"
+  heartbeat_interval: 300
+
+local_buffer:
+  max_size_gb: 16
+  retention_days: 7

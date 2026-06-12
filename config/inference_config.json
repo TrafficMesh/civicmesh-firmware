@@ -1,0 +1,16 @@
+{
+  "models": {
+    "alpr": "models/alpr.tflite",
+    "lane_detection": "models/lane_detection.tflite",
+    "object_detection": "models/object_detection.tflite"
+  },
+  "confidence_thresholds": {
+    "bus_lane": 0.95,
+    "red_light": 0.95
+  },
+  "inference_settings": {
+    "num_threads": 2,
+    "enable_gpu": false,
+    "max_detections": 100
+  }
+}
