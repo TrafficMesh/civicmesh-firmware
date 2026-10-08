@@ -1,0 +1,41 @@
+schemaVersion: 1
+repository: civicmesh-firmware
+context: firmware
+lifecycle: implementation
+skillPack:
+  repository: TrafficMesh/civicmesh-docs
+  revision: 3e7d1b5bfe1bc891c5187a69af42fdf1143c4673
+  registry: config/agent-skills.yaml
+  policy: docs/governance/AGENT-SKILLS.md
+enabledSkills:
+  - code-review
+  - codebase-design
+  - domain-modeling
+  - pr
+  - research
+  - teach
+  - grill-me
+  - grill-with-docs
+  - grilling
+  - handoff
+  - to-questionnaire
+  - to-spec
+  - to-tickets
+  - wayfinder
+  - wait-what
+gatedSkills:
+  - ask-matt
+  - diagnosing-bugs
+  - implement
+  - implement-spec
+  - setup-matt-pocock-skills
+  - triage
+prohibitedSkills:
+  - wizard
+entrypoints:
+  - README.md
+boundary:
+  changeScope: this-repository
+  decisionAuthority: TrafficMesh project owner and documented governance
+  contractAuthority: CivicMesh docs hub API and project specifications
+  trackerAuthority: GitHub issue/PR writes require explicit request
