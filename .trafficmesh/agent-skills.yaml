@@ -1,12 +1,14 @@
 schemaVersion: 1
 repository: civicmesh-firmware
+organization: TrafficMesh
 context: firmware
 lifecycle: implementation
 skillPack:
   repository: TrafficMesh/civicmesh-docs
-  revision: f03e3e295db90056baf5f0ddc6d1b586bdefb7a7
+  revision: 099fe5989e9d821d6c91c9b93651f34a1d25a691
   registry: config/agent-skills.yaml
   policy: docs/governance/AGENT-SKILLS.md
+organizationInstructions: https://github.com/TrafficMesh/civicmesh-docs/blob/91754959b5627aebdfb147f080eb5582ac69165a/docs/governance/COPILOT-ORGANIZATION-INSTRUCTIONS.md
 availableSkills:
   - ask-matt
   - code-review
