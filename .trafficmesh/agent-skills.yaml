@@ -4,7 +4,7 @@ context: firmware
 lifecycle: implementation
 skillPack:
   repository: TrafficMesh/civicmesh-docs
-  revision: 008306053de8f604bb06fb3da4aaef72676dcda4
+  revision: f03e3e295db90056baf5f0ddc6d1b586bdefb7a7
   registry: config/agent-skills.yaml
   policy: docs/governance/AGENT-SKILLS.md
 availableSkills:
