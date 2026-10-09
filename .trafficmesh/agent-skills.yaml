@@ -1,0 +1,96 @@
+schemaVersion: 1
+repository: civicmesh-firmware
+organization: TrafficMesh
+context: firmware
+lifecycle: implementation
+skillPack:
+  repository: TrafficMesh/civicmesh-docs
+  revision: 896ba7969fc810d463fcd91f310aa4e6acd51380
+  registry: config/agent-skills.yaml
+  policy: docs/governance/AGENT-SKILLS.md
+skillApplicationScope: https://github.com/TrafficMesh/civicmesh-docs/blob/63a3986858dba413b7edcec49aa69100ce455e4c/docs/governance/AGENT-SKILL-APPLICATION-SCOPE.md
+organizationInstructions: https://github.com/TrafficMesh/civicmesh-docs/blob/91754959b5627aebdfb147f080eb5582ac69165a/docs/governance/COPILOT-ORGANIZATION-INSTRUCTIONS.md
+availableSkills:
+  - ask-matt
+  - code-review
+  - codebase-design
+  - diagnosing-bugs
+  - domain-modeling
+  - grill-me
+  - grill-with-docs
+  - grilling
+  - handoff
+  - implement
+  - implement-spec
+  - improve-codebase-architecture
+  - pr
+  - prototype
+  - research
+  - retro
+  - setup-matt-pocock-skills
+  - tdd
+  - teach
+  - to-questionnaire
+  - to-spec
+  - to-tickets
+  - triage
+  - wait-what
+  - wayfinder
+  - writing-for-agents
+  - trafficmesh-project-assessment
+  - trafficmesh-evidence-audit
+  - trafficmesh-upstream-adoption
+enabledSkills:
+  - trafficmesh-project-assessment
+  - trafficmesh-evidence-audit
+  - trafficmesh-upstream-adoption
+  - code-review
+  - codebase-design
+  - domain-modeling
+  - pr
+  - research
+  - teach
+  - grill-me
+  - grill-with-docs
+  - grilling
+  - handoff
+  - to-questionnaire
+  - to-spec
+  - to-tickets
+  - wayfinder
+  - wait-what
+gatedSkills:
+  - ask-matt
+  - diagnosing-bugs
+  - implement
+  - implement-spec
+  - setup-matt-pocock-skills
+  - triage
+notEnabledSkills:
+  - improve-codebase-architecture
+  - prototype
+  - retro
+  - tdd
+  - writing-for-agents
+prohibitedSkills:
+  - wizard
+excludedSkills:
+  - chief-of-staff
+  - claude-handoff
+  - loop-me
+  - setup-ts-deep-modules
+  - writing-beats
+  - writing-fragments
+  - writing-shape
+  - git-guardrails-claude-code
+  - migrate-to-shoehorn
+  - scaffold-exercises
+  - setup-pre-commit
+  - wizard
+entrypoints:
+  - README.md
+boundary:
+  changeScope: this-repository
+  decisionAuthority: TrafficMesh project owner and documented governance
+  contractAuthority: CivicMesh docs hub API and project specifications
+  trackerAuthority: GitHub issue/PR writes require explicit request
